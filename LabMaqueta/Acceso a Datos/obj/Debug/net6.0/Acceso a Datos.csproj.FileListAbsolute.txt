@@ -1,0 +1,24 @@
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.AssemblyInfo.cs
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\bin\Debug\net6.0\Acceso a Datos.deps.json
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\bin\Debug\net6.0\Acceso a Datos.dll
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\bin\Debug\net6.0\Acceso a Datos.pdb
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.dll
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\refint\Acceso a Datos.dll
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.pdb
+C:\Users\PC\source\repos\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\ref\Acceso a Datos.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\bin\Debug\net6.0\Acceso a Datos.deps.json
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\bin\Debug\net6.0\Acceso a Datos.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\bin\Debug\net6.0\Acceso a Datos.pdb
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.csproj.AssemblyReference.cache
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.AssemblyInfoInputs.cache
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.AssemblyInfo.cs
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.csproj.CoreCompileInputs.cache
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\refint\Acceso a Datos.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\Acceso a Datos.pdb
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Acceso a Datos\obj\Debug\net6.0\ref\Acceso a Datos.dll

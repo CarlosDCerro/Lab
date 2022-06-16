@@ -1,0 +1,30 @@
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.AssemblyInfo.cs
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Entidades.deps.json
+C:\Users\PC\source\repos\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Entidades.dll
+C:\Users\PC\source\repos\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Entidades.pdb
+C:\Users\PC\source\repos\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Acceso a Datos.dll
+C:\Users\PC\source\repos\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Acceso a Datos.pdb
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.csproj.CopyComplete
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.dll
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\refint\Entidades.dll
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.pdb
+C:\Users\PC\source\repos\LabMaqueta\Entidades\obj\Debug\net6.0-windows\ref\Entidades.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Entidades.deps.json
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Entidades.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Entidades.pdb
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Acceso a Datos.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\bin\Debug\net6.0-windows\Acceso a Datos.pdb
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.csproj.AssemblyReference.cache
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.AssemblyInfoInputs.cache
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.AssemblyInfo.cs
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.csproj.CoreCompileInputs.cache
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.csproj.CopyComplete
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\refint\Entidades.dll
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\Entidades.pdb
+D:\Docs Viejos\Archivos Julio\LabMaqueta\Entidades\obj\Debug\net6.0-windows\ref\Entidades.dll

@@ -1,0 +1,12 @@
+C:\Users\PC\source\repos\LabMaqueta\Presentación\bin\Debug\net6.0\Presentación.deps.json
+C:\Users\PC\source\repos\LabMaqueta\Presentación\bin\Debug\net6.0\Presentación.dll
+C:\Users\PC\source\repos\LabMaqueta\Presentación\bin\Debug\net6.0\Presentación.pdb
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.AssemblyInfo.cs
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.dll
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\refint\Presentación.dll
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\Presentación.pdb
+C:\Users\PC\source\repos\LabMaqueta\Presentación\obj\Debug\net6.0\ref\Presentación.dll

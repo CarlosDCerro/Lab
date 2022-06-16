@@ -1,0 +1,12 @@
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\bin\Debug\net6.0\Lógica de Negocio.deps.json
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\bin\Debug\net6.0\Lógica de Negocio.dll
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\bin\Debug\net6.0\Lógica de Negocio.pdb
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.AssemblyInfo.cs
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.dll
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\refint\Lógica de Negocio.dll
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\Lógica de Negocio.pdb
+C:\Users\PC\source\repos\LabMaqueta\Lógica de Negocio\obj\Debug\net6.0\ref\Lógica de Negocio.dll
