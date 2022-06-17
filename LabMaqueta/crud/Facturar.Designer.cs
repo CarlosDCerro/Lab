@@ -37,14 +37,19 @@
             this.dtPckrFecha = new System.Windows.Forms.DateTimePicker();
             this.cmbProductoFact = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCantidadFact = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAgregarProd = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridFactura = new System.Windows.Forms.DataGridView();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTotalFact = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnTerminarFact = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCantidadFact = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFactura)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTittleProductosNaturVida
@@ -55,16 +60,17 @@
             this.lbTittleProductosNaturVida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lbTittleProductosNaturVida.Location = new System.Drawing.Point(305, 9);
             this.lbTittleProductosNaturVida.Name = "lbTittleProductosNaturVida";
-            this.lbTittleProductosNaturVida.Size = new System.Drawing.Size(203, 35);
+            this.lbTittleProductosNaturVida.Size = new System.Drawing.Size(174, 35);
             this.lbTittleProductosNaturVida.TabIndex = 2;
-            this.lbTittleProductosNaturVida.Text = "Facturaración";
+            this.lbTittleProductosNaturVida.Text = "Facturación";
             this.lbTittleProductosNaturVida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtNumeroFact
             // 
             this.txtNumeroFact.Location = new System.Drawing.Point(133, 66);
             this.txtNumeroFact.Name = "txtNumeroFact";
-            this.txtNumeroFact.Size = new System.Drawing.Size(333, 23);
+            this.txtNumeroFact.ReadOnly = true;
+            this.txtNumeroFact.Size = new System.Drawing.Size(81, 23);
             this.txtNumeroFact.TabIndex = 7;
             // 
             // lblUser
@@ -95,7 +101,7 @@
             "Vitamina E"});
             this.cmbClienteFact.Location = new System.Drawing.Point(133, 106);
             this.cmbClienteFact.Name = "cmbClienteFact";
-            this.cmbClienteFact.Size = new System.Drawing.Size(427, 23);
+            this.cmbClienteFact.Size = new System.Drawing.Size(283, 23);
             this.cmbClienteFact.TabIndex = 9;
             // 
             // label4
@@ -146,7 +152,7 @@
             "Vitamina E"});
             this.cmbProductoFact.Location = new System.Drawing.Point(133, 146);
             this.cmbProductoFact.Name = "cmbProductoFact";
-            this.cmbProductoFact.Size = new System.Drawing.Size(333, 23);
+            this.cmbProductoFact.Size = new System.Drawing.Size(189, 23);
             this.cmbProductoFact.TabIndex = 13;
             // 
             // label2
@@ -161,13 +167,6 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Productos:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtCantidadFact
-            // 
-            this.txtCantidadFact.Location = new System.Drawing.Point(133, 186);
-            this.txtCantidadFact.Name = "txtCantidadFact";
-            this.txtCantidadFact.Size = new System.Drawing.Size(333, 23);
-            this.txtCantidadFact.TabIndex = 15;
             // 
             // label3
             // 
@@ -193,20 +192,56 @@
             this.btnAgregarProd.TabIndex = 16;
             this.btnAgregarProd.Text = "Agregar producto";
             this.btnAgregarProd.UseVisualStyleBackColor = false;
+            this.btnAgregarProd.Click += new System.EventHandler(this.btnAgregarProd_Click);
             // 
-            // dataGridView1
+            // dataGridFactura
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 229);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(770, 174);
-            this.dataGridView1.TabIndex = 17;
+            this.dataGridFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridFactura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo,
+            this.producto,
+            this.cantidad,
+            this.valor,
+            this.total});
+            this.dataGridFactura.Location = new System.Drawing.Point(18, 229);
+            this.dataGridFactura.Name = "dataGridFactura";
+            this.dataGridFactura.RowTemplate.Height = 25;
+            this.dataGridFactura.Size = new System.Drawing.Size(770, 174);
+            this.dataGridFactura.TabIndex = 17;
+            // 
+            // codigo
+            // 
+            this.codigo.HeaderText = "Código";
+            this.codigo.Name = "codigo";
+            // 
+            // producto
+            // 
+            this.producto.HeaderText = "Producto";
+            this.producto.Name = "producto";
+            this.producto.Width = 250;
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.Name = "cantidad";
+            // 
+            // valor
+            // 
+            this.valor.HeaderText = "Valor Unitario";
+            this.valor.Name = "valor";
+            this.valor.Width = 150;
+            // 
+            // total
+            // 
+            this.total.HeaderText = "Total";
+            this.total.Name = "total";
+            this.total.Width = 140;
             // 
             // txtTotalFact
             // 
             this.txtTotalFact.Location = new System.Drawing.Point(455, 418);
             this.txtTotalFact.Name = "txtTotalFact";
+            this.txtTotalFact.ReadOnly = true;
             this.txtTotalFact.Size = new System.Drawing.Size(333, 23);
             this.txtTotalFact.TabIndex = 19;
             // 
@@ -234,6 +269,15 @@
             this.btnTerminarFact.TabIndex = 20;
             this.btnTerminarFact.Text = "Terminar factura";
             this.btnTerminarFact.UseVisualStyleBackColor = false;
+            this.btnTerminarFact.Click += new System.EventHandler(this.btnTerminarFact_Click);
+            // 
+            // txtCantidadFact
+            // 
+            this.txtCantidadFact.Location = new System.Drawing.Point(133, 186);
+            this.txtCantidadFact.Name = "txtCantidadFact";
+            this.txtCantidadFact.Size = new System.Drawing.Size(189, 23);
+            this.txtCantidadFact.TabIndex = 15;
+            this.txtCantidadFact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadFact_KeyPress);
             // 
             // frmFacturar
             // 
@@ -243,7 +287,7 @@
             this.Controls.Add(this.btnTerminarFact);
             this.Controls.Add(this.txtTotalFact);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridFactura);
             this.Controls.Add(this.btnAgregarProd);
             this.Controls.Add(this.txtCantidadFact);
             this.Controls.Add(this.label3);
@@ -259,7 +303,7 @@
             this.Name = "frmFacturar";
             this.Text = "Facturar";
             this.Load += new System.EventHandler(this.frmFacturar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFactura)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,12 +320,17 @@
         private DateTimePicker dtPckrFecha;
         private ComboBox cmbProductoFact;
         private Label label2;
-        private TextBox txtCantidadFact;
         private Label label3;
         private Button btnAgregarProd;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridFactura;
         private TextBox txtTotalFact;
         private Label label5;
         private Button btnTerminarFact;
+        private DataGridViewTextBoxColumn codigo;
+        private DataGridViewTextBoxColumn producto;
+        private DataGridViewTextBoxColumn cantidad;
+        private DataGridViewTextBoxColumn valor;
+        private DataGridViewTextBoxColumn total;
+        private TextBox txtCantidadFact;
     }
 }

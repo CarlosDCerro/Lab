@@ -42,9 +42,7 @@ namespace crud
                     lblErrorUsrVacio.Visible = false;
                     lblErrorUsrInvalido.Visible = true;
                 }
-                
             }
-
         }
 
         public DataTable Validar(String User, String Pwd)
@@ -52,22 +50,24 @@ namespace crud
             var validacion = new DataTable();
             try
             {
-                conexion.OpenConnection();
                 using (var Adapter = new SqlDataAdapter())
                 {
-                    Adapter.SelectCommand = new SqlCommand("select * from Vendedores where venUsuario='"+ User  + "' and venContraseña='" + Pwd + "'");
+                    Adapter.SelectCommand = new SqlCommand("Select * from Vendedores where venUsuario = '"+ User  + "' and venContraseña = '" + Pwd + "'");
                     Adapter.SelectCommand.Connection = conexion.OpenConnection();
                     Adapter.Fill(validacion);
                     Adapter.SelectCommand.Connection.Close();
                 }
-                conexion.ClosedConnection();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return validacion;
-
+        }
+        private void UsuarioVendedor()
+        {
+            frmFacturar facturar = new frmFacturar();
+            facturar.Text = txtUser.Text; 
         }
     }
 }

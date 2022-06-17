@@ -1,7 +1,6 @@
 ﻿using System.Data.SqlClient;
 using Acceso_a_Datos;
 using System.Data;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 namespace Entidades
@@ -58,7 +57,6 @@ namespace Entidades
             {
                 try
                 {
-                    conexion.OpenConnection();
                     using (var Adapter = new SqlDataAdapter())
                     {
                         Adapter.SelectCommand = new SqlCommand("Select * from Productos");
@@ -66,7 +64,6 @@ namespace Entidades
                         Adapter.Fill(consulta);
                         Adapter.SelectCommand.Connection.Close();
                     }
-                    conexion.ClosedConnection();
                 }
                 catch (Exception ex)
                 {
@@ -77,7 +74,6 @@ namespace Entidades
             {
                 try
                 {
-                    conexion.OpenConnection();
                     using (var Adapter = new SqlDataAdapter())
                     {
                         Adapter.SelectCommand = new SqlCommand("sp_BuscarProducto");
@@ -87,7 +83,6 @@ namespace Entidades
                         Adapter.Fill(consulta);
                         Adapter.SelectCommand.Connection.Close();
                     }
-                    conexion.ClosedConnection();
                 }
                 catch (Exception ex)
                 {
@@ -118,6 +113,27 @@ namespace Entidades
             }
 
             MessageBox.Show("El producto fue modificado a la base de datos exitosamente.", "Producto actualizado correctamente.",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void Eliminar ()
+        {
+            try
+            {
+                using (var Command = new SqlCommand("sp_EliminarProductos"))
+                {
+                    Command.Parameters.AddWithValue("@proDescripcion", _proDescripcion);
+                    Command.CommandType = CommandType.StoredProcedure;
+                    Command.Connection = conexion.OpenConnection();
+                    Command.ExecuteNonQuery();
+                    Command.Connection.Close();
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            MessageBox.Show("El producto fue eliminado a la base de datos exitosamente.", "Producto eiminado correctamente.",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

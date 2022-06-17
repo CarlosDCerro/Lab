@@ -112,6 +112,7 @@ namespace crud
                     var cantidad = Tabla.Rows[i][3].ToString();
 
                     dataGridProductos.Rows.Add(codigo, descripcion, valor, cantidad);
+                    dataGridProductos.Columns[2].DefaultCellStyle.Format = "C";
                 }
             }     
         }
@@ -167,8 +168,9 @@ namespace crud
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //COLOCAR LA LÓGICA PARA ELIMINAR
-
+            var descripcion = cmbProductoEliminar.Text;
+            var eliminarProducto = new Entidades.DatosProducto(0,descripcion);
+            eliminarProducto.Eliminar();   
         }
     }
 }

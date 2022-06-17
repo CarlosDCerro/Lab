@@ -143,6 +143,18 @@ insert into Facturas (facNumero, facFecha, facCliente, facValorTotal, facVendedo
 values (@facNumero, @facFecha, @facCliente, @facValorTotal, @facVendedor)
 go
 
+-- Procedimiento Almacenado Insertar == Facturas Detalles
+create procedure sp_InsertarFacturasDetalles
+(
+@facNumero char(11),
+@facProducto char(11),
+@facCantidad char(11)
+)
+as
+insert into FacturaDetalle (facNumero, facProducto, facCantidad)
+values(@facNumero, @facProducto, @facCantidad)
+go
+
 --Procedimiento Almacenado Consultar == Facturas
 
 create procedure sp_ConsultarFacturas

@@ -160,10 +160,10 @@
         private Label lbTittle;
         private Label lblUser;
         private Label lblPassword;
-        private TextBox txtUser;
         private TextBox txtPassword;
         private Button btnIngresar;
         private Label lblErrorUsrInvalido;
         private Label lblErrorUsrVacio;
+        public TextBox txtUser;
     }
 }
