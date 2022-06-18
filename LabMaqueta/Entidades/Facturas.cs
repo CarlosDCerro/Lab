@@ -73,7 +73,7 @@ namespace Entidades
         public void TerminarFactura(
             int FacNumero,
             DateTime FacFecha,
-            string FacCLiente,
+            int FacCLiente,
             int FacTotal,
             string FacVendedor,
             string FacProducto,
@@ -94,7 +94,7 @@ namespace Entidades
                     Command.ExecuteNonQuery();
                     Command.Connection.Close();
                 }
-
+                
                 using (var Command = new SqlCommand("sp_InsertarFacturasDetalles"))
                 {
                     Command.Parameters.AddWithValue("@facNumero", FacNumero);

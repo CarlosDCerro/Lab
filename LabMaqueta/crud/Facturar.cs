@@ -94,7 +94,7 @@ namespace crud
                     {
                         totalFactura += Convert.ToInt32(row.Cells[4].Value);
                     }
-                    txtTotalFact.Text = totalFactura.ToString("C");
+                    txtTotalFact.Text = totalFactura.ToString();
                 }
                 
             }
@@ -119,17 +119,8 @@ namespace crud
 
         private void btnTerminarFact_Click(object sender, EventArgs e)
         {
-            frmFacturar facturar = new frmFacturar();
-            var numero = Int32.Parse(txtNumeroFact.Text);
-            var fecha = DateTime.Parse(dtPckrFecha.Text);
-            var cliente = cmbClienteFact.Text;
-            var total = Int32.Parse(txtTotalFact.Text);
-            var vendedor = facturar.Text;
-            var producto = cmbProductoFact.Text;
-            var cantidad = Int32.Parse(txtCantidadFact.Text.ToString());
-
-            var detalleProducto = new Entidades.Facturas();
-            detalleProducto.TerminarFactura(numero, fecha, cliente, total, vendedor, producto, cantidad);
+            frmFacturar factura = new frmFacturar();
+            factura.Close();
 
         }
 
@@ -143,6 +134,37 @@ namespace crud
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void cmbClienteFact_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private int BuscarDocumentoCliente(string nombreCliente)
+        {
+            int documento = 0;
+            var consulta = new DataTable();
+            if (nombreCliente != "")
+            {
+                try
+                {
+                    using (var Adapter = new SqlDataAdapter())
+                    {
+                        Adapter.SelectCommand = new SqlCommand("Select * from Clientes Where cliNombre = '" + nombreCliente + "'");
+                        Adapter.SelectCommand.Connection = conexion.OpenConnection();
+                        Adapter.Fill(consulta);
+                        Adapter.SelectCommand.Connection.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+                documento = Int32.Parse(consulta.Rows[0][0].ToString());
+            }
+            return documento;
         }
     }
 }

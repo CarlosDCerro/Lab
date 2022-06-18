@@ -1,4 +1,4 @@
-create database TiendaNaturista
+ï»¿create database TiendaNaturista
 go
 
 use TiendaNaturista
@@ -19,8 +19,8 @@ cliDocumento asc
 go
 
 insert into Clientes values ('42918785','Dayana Pacheco','Calle 1','3233770258','dayanapacheco@mail.com')
-insert into Clientes values ('92485277','Matías Cerro','Calle34','3161234789','matiascerro@mail.com')
-insert into Clientes values ('36215784','Gabrielle Rodríguez','Calle 5','3142348900','gabriellerodriguez@mail.com')
+insert into Clientes values ('92485277','MatÃ­as Cerro','Calle34','3161234789','matiascerro@mail.com')
+insert into Clientes values ('36215784','Gabrielle RodrÃ­guez','Calle 5','3142348900','gabriellerodriguez@mail.com')
 insert into Clientes values ('12567987','Marlene Morales','Calle 7','3164932389','marlenemorales@mail.com')
 go
 
@@ -78,8 +78,8 @@ go
 
 
 create table Vendedores(
-venUsuario char(11) not null,
-venContraseña varchar (10) not null,
+venUsuario varchar(11) not null,
+venContraseÃ±a char (10) not null,
 constraint PK_Vendedores primary key clustered
 (
 venUsuario asc
@@ -92,13 +92,13 @@ insert into Vendedores
 values ('Cerro','12345')
 go
 
-select * from Vendedores where venUsuario='Cerro' and venContraseña='12345'
+select * from Vendedores where venUsuario='Cerro' and venContraseÃ±a='12345'
 go
 
 
-declare @user char(11)='Cerro'
-declare @pass varchar(10)='12345'
-select * from Vendedores where venUsuario=@user and venContraseña=@pass
+declare @user varchar(11)='Cerro'
+declare @pass char(10)='12345'
+select * from Vendedores where venUsuario=@user and venContraseÃ±a=@pass
 go
 
 -- Procedimiento almacenado Ingresar / Validar vendedor 
@@ -108,7 +108,7 @@ create procedure sp_IngresarVendendor
 @pass varchar(10)
 )
 as
-select * from Vendedores where venUsuario=@user and venContraseña=@pass
+select * from Vendedores where venUsuario=@user and venContraseÃ±a=@pass
 go
 
 
@@ -117,7 +117,7 @@ facNumero char(11) not null,
 facFecha date not null,
 facCliente char(11) not null,
 facValorTotal char(20) not null,
-facVendedor char(11) not null,
+facVendedor varchar(11) not null,
 foreign key (facCliente) references Clientes (cliDocumento),
 foreign key (facVendedor) references Vendedores (venUsuario),
 constraint PK_Facturas primary key clustered
@@ -144,16 +144,6 @@ values (@facNumero, @facFecha, @facCliente, @facValorTotal, @facVendedor)
 go
 
 -- Procedimiento Almacenado Insertar == Facturas Detalles
-create procedure sp_InsertarFacturasDetalles
-(
-@facNumero char(11),
-@facProducto char(11),
-@facCantidad char(11)
-)
-as
-insert into FacturaDetalle (facNumero, facProducto, facCantidad)
-values(@facNumero, @facProducto, @facCantidad)
-go
 
 --Procedimiento Almacenado Consultar == Facturas
 
@@ -178,7 +168,7 @@ go
 
 
 insert into Productos values ('901','Aceite de Almendras','13098','187')
-insert into Productos values ('902','Caléndula','8546','259')
+insert into Productos values ('902','CalÃ©ndula','8546','259')
 insert into Productos values ('903','Embrion de Pato','18500','456')
 insert into Productos values ('904','Lecitina de Soya','12345','300')
 insert into Productos values ('905','Omega','34567','1234')
@@ -270,6 +260,18 @@ foreign key (facProducto) references Productos (proCodigo)
 
 go
 
+create procedure sp_InsertarFacturasDetalles
+(
+@facNumero char(11),
+@facProducto char(11),
+@facCantidad char(11)
+)
+as
+insert into FacturaDetalle (facNumero, facProducto, facCantidad)
+values(@facNumero, @facProducto, @facCantidad)
+go
+
+
 
 create procedure sp_BuscarProducto
 @textobuscar varchar(50)
@@ -291,4 +293,3 @@ exec sp_ListarInventario
 exec sp_ListarClientes
 exec sp_ModificarProductos '116','Tomillo','2193'
 exec sp_EliminarProductos 'Ajo'
-

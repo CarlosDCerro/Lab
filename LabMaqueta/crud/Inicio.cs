@@ -47,12 +47,13 @@ namespace crud
 
         public DataTable Validar(String User, String Pwd)
         {
+            int Password = Int32.Parse(Pwd);
             var validacion = new DataTable();
             try
             {
                 using (var Adapter = new SqlDataAdapter())
                 {
-                    Adapter.SelectCommand = new SqlCommand("Select * from Vendedores where venUsuario = '"+ User  + "' and venContraseña = '" + Pwd + "'");
+                    Adapter.SelectCommand = new SqlCommand("Select * from Vendedores where venUsuario = '"+ User  + "' and venContraseña = '" + Password + "'");
                     Adapter.SelectCommand.Connection = conexion.OpenConnection();
                     Adapter.Fill(validacion);
                     Adapter.SelectCommand.Connection.Close();

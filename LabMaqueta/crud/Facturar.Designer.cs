@@ -103,6 +103,7 @@
             this.cmbClienteFact.Name = "cmbClienteFact";
             this.cmbClienteFact.Size = new System.Drawing.Size(283, 23);
             this.cmbClienteFact.TabIndex = 9;
+            this.cmbClienteFact.SelectedIndexChanged += new System.EventHandler(this.cmbClienteFact_SelectedIndexChanged);
             // 
             // label4
             // 
